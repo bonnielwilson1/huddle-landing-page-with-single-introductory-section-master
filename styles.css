@@ -6,72 +6,86 @@
 background: var(--violet) url(images/bg-desktop.svg);
 background-size:170vh;
 color: white; 
-overflow: hidden;
+scroll-behavior: smooth;
+
 }
 
 * {
 box-sizing: border-box;
-margin: 0;
+margin: 0 auto;
 padding: 0; 
+
 }
 
 .container {
-    max-width: 1440px;
-    margin: 30px auto;
-    padding: 5rem;
+    margin: 20px auto;
+    padding: 2rem 1rem;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.3fr 1fr;
     gap: 1rem;
-    
+    overflow: auto;
+   max-width: 90%;
+
 }
 
 .image-section {
-    margin-bottom: 100px;
-    
+    margin: 0 20px 100px 0;
+    display: flex;
+    flex-direction: column;   
 }
+
 .image-section .logo {
     margin-bottom: 50px;
+    margin-left: 0;
+    height: 2.5rem;
+    width: 9rem;
 }
+
 .info-section {
-    margin-top:5rem;
+    margin-top: 3.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* margin-bottom: 60px; */
-    
+    padding-right: 50px;
+   
 }
 
 .info-section h1 {
     font-family: var(--heading-font);
+    font-size: 1.75rem;
     padding-bottom: 20px;
     margin: 0;
+    line-height: 2.5rem;
 }
 .info-section p {
     font-family: var(--body-font);
     font-size: 15px;
     line-height: 1.8;
-    padding: 0;
-    margin: 0;
+    
+    opacity: 80%;
 }
 button {
-    width: 50%;
+    width: 40%;
     border-radius: 50px;
-    font-family: var(--body-font);
+    font-family: var(--heading-font);
+    font-weight: 400;
     color:hsl(257, 40%, 49%);
-    padding: 1rem;
-    font-size: 13px;
+    padding: .75rem .5rem;
+    font-size: 18px;
     margin-top: 1rem;
+    margin-left: 0;
+    border: none;
+    box-shadow: 0px 10px 10px 2px hsl(257, 40%, 39%);
 
 }
 button:hover {
     background-color: var(--soft-magenta);
-    border: none;
     cursor: pointer;
 }
 .info-section .link-icons {
     text-align: right;
-
-    margin-top: 7rem;
+    margin-right: 0;
+    margin-top: 10rem;
     
 }
 
@@ -85,7 +99,93 @@ button:hover {
     cursor: pointer;
 }
 
-/* poppins 400 600
-open sans 400 
+@media only screen and (max-width: 1100px){
+    :root {
+
+        background: var(--violet) url(images/bg-mobile.svg) top center no-repeat;
+        background-size:100vw;
+        margin: 0 auto;
+        
+        
+        }
+
+    .container {
+        grid-template-columns: 1fr;
+        margin: 20px auto;
+        width: 90vw;
+        padding: 0;
+        overflow: hidden;
+        
+    }
+    .image-section {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        margin-left: 0;
+        width: 90vw;
+        margin-bottom: 0;
+        
+    }
+    .image-section .logo {
+        margin-bottom: 50px;
+        margin-left: 0;
+        height: 2.5rem;
+        width:6rem;
+    }
+    .mockups {
+        margin-left: 0;
+        width: 90vw;
+    }
+    .info-section, h1, p {
+        align-items: center;
+        text-align: center;
+
+    }
+    .info-section h1 {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        margin-top: 0;
+    }
+    .info-section p {
+        padding: 0 12px;
+    } 
+    button {
+        margin: 30px auto;
+        width: 70%;
+        padding: 10px 30px;
+        
 
 
+    }
+    .info-section .link-icons {
+        margin: 70px auto 0;
+    }
+    /* background image and done!  */
+   
+    }
+    /* .container {
+        display: grid;
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        
+        
+    } */
+    /* .image-section { {
+
+}
+
+        margin: 0 50px 100px 0;
+        
+    }
+    .image-section .logo {
+        margin-bottom: 50px;
+    }
+    .info-section {
+        margin-top:5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start; */
+
+}
