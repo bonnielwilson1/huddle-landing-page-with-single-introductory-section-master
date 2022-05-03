@@ -105,8 +105,7 @@ button:hover {
         background: var(--violet) url(images/bg-mobile.svg) top center no-repeat;
         background-size:100vw;
         margin: 0 auto;
-        
-        
+ 
         }
 
     .container {
@@ -153,39 +152,8 @@ button:hover {
         margin: 30px auto;
         width: 70%;
         padding: 10px 30px;
-        
-
-
     }
     .info-section .link-icons {
         margin: 70px auto 0;
     }
-    /* background image and done!  */
-   
-    }
-    /* .container {
-        display: grid;
-        
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr;
-        
-        
-    } */
-    /* .image-section { {
-
-}
-
-        margin: 0 50px 100px 0;
-        
-    }
-    .image-section .logo {
-        margin-bottom: 50px;
-    }
-    .info-section {
-        margin-top:5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: flex-start; */
-
 }
